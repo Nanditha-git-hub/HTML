@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Bus Pass Application</title>
+</head>
+<body>
+    <center><h1 style="background-color:rgba(127, 210, 255, 0.5);"><img src="BusTSlogo.jpg"width="90"><br><font color="blue"><center>TELANGANA STATE BOARD TRANSPORT CORPORATION</center></font><br><font color="BLACK">GENERAL BUS PASS APPLICATION</font></h1></center>
+    <form method="get" action="./Bus_submission.html">
+        <fieldset>
+            <!-- Legend tag using -->
+            <legend style="background-color:rgba(0, 0, 255, 0.537)">Applicant Details::</legend>
+            <label for ="name">Name:</label>
+            <input type="text" pattern="[a-zA-Z]+{8,20}"title="(Maximum characters:20)" required>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for ="name">Father's/Guardian's Name:</label>
+            <input type="text" pattern="[a-zA-Z]+{8,20}"title="(Maximum characters:20)" required>
+            <br><br>
+            <label for ="Date of birth">Date of birth:</label>
+            <input type="datetime-local" name="DOB" id="DOB" margin="5px" required>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for ="Gender">Gender:</label>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="Male" id="male" required>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="Female" id="female" required>
+            <br><br>
+            <label for="Age as on">Age as on:</label>
+            <input type="text" required>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="Aadhar Number">Aadhar Number:</label>
+            <input type="text" name="Aadhaar Number"placeholder="Enter adhaar number" required>
+            <br><br>
+            <label for="whatsapp No">Whatsapp No:</label>
+            <input type="text" name="Whatsapp No"placeholder="Enter whatsapp no." required>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="Email">Email ID:</label>
+            <input type="text" name="email id" id="email id" placeholder="Enter email id" pattern="(?=.[a-zA-Z0-9.])+@(?=.[a-z0-9])+(?=.*[a-z])" required>
+            <br><br>
+            <label for="Photo">Photo:</label>
+            <input type="file" name="Profile photo" id="photo" palceholder="choose file">
+        </fieldset>
+        <fieldset>
+            <!-- Legend tag using -->
+            <legend style="background-color:rgba(0, 0, 255, 0.537)">Residential Address Details::</legend>
+            <label for="Address">Applicant's Address:</label>
+            <textarea name="Address" id="Applicant Address" pattern="[A-Za-z]+{3,20}"></textarea>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="District">District:</label>
+<select name="Location" id="Location">
+  <option value="Hyderabad">Hyderabad</option>
+</select>
+<br><br>
+<label for="Mandal">Mandal:</label>
+<select name="Location" id="Location">
+  <option value="Saroor nagar">Hyderabad</option>
+</select>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label for="Village">Village:</label>
+<select name="Location" id="Location">
+  <option value="Hyderabad">Hyderabad</option>
+</select>
+<br><br>
+            <label>Pincode:</label>
+            <input type="text">
+            <br><br>
+        </fieldset>
+        <fieldset>
+            <!-- Legend tag using -->
+            <legend style="background-color:rgba(0, 0, 255, 0.537)">Pass Type Details::</legend>
+            <label for="City">City:</label>
+<select name="City" id="City">
+  <option value="Hyderabad">Hyderabad</option>
+</select>
+<br><br>
+<label for="Pass Type">Pass Type:</label>
+<select name="Location" id="Location">
+  <option value="select">-----------select---------</option>
+  <option value="Greater pass">Greater pass</option>
+  <option value="General ordinary route Pass MTLY">General ordinary route Pass MTLY</option>
+  <option value="Ordinary pass">Ordinary pass</option>
+  <option value="Metro Express pass">Metro Express pass</option>
+</select>
+
+        </fieldset>
+        <fieldset>
+            <!-- Legend tag using -->
+            <legend style="background-color:rgba(0, 0, 255, 0.537)">Mode of Payment & Pass Collection::</legend>
+            <label for="Payment mode:">Payment mode:</label>
+<select name="payment" id="payment">
+  <option value="select">Select Payment Mode </option>
+  <option value="Payment at Counter">Payment at Counter</option>
+</select>
+<br><br>
+<label for="Payment mode:">Payment mode:</label>
+<select name="payment" id="payment">
+  <option value="select">Select pass Delivery Mode </option>
+  <option value="At Counter">At Counter</option>
+</select>
+<br><br>
+<label for="Payment mode:">Center at Which you want to collect pass:</label>
+<select name="payment" id="payment">
+  <option value="select">---------Select-------------- </option>
+  <option value="RTC ABIDS-HYD[05/02/2025]">RTC ABIDS-HYD[05/02/2025]</option>
+  <option value="RTC AFZALGANJ-HYD[05/02/2025]">RTC AFZALGANJ-HYD[05/02/2025]</option>
+  <option value="RTC AIRPORT-HYD[04/02/2025]">RTC AIRPORT-HYD[04/02/2025]</option>
+  <option value="RTC ARAMGHAR-HYD[05/02/2025]">RTC ARAMGHAR-HYD[05/02/2025]</option>
+  <option value="RTC BALANAGAR-HYD[04/02/2025]">RTC BALANAGAR-HYD[04/02/2025]</option>
+  <option value="RTC BORABANDA-HYD[04/02/2025]">RTC BORABANDA-HYD[04/02/2025]</option>
+  <option value="RTC CBS-HYD[05/02/2025]">RTC CBS-HYD[05/02/2025]</option>
+  <option value="RTC CHARMINAR-HYD[05/02/2025]">RTC CHARMINAR-HYD[05/02/2025]</option>
+  <option value="RTC DILSHUKNAGAR-HYD[04/02/2025]">RTC DILSHUKNAGAR-HYD[04/02/2025]</option>
+  <option value="RTC ECIL-HYD[05/02/2025]">RTC ECIL-HYD[05/02/2025]</option>
+  <option value="RTC FAROORNAGAR-HYD[04/02/2025]">RTC FAROORNAGAR-HYD[04/02/2025]</option>
+</select>
+<br><br>
+        </fieldset>
+    <center><P><img src="BusCaptcha.png" width="200"></P></center>
+    <br><br>
+    <center><input type="text" name="captcha" id="captcha" required></center>
+    <center><input type="submit" value="submit"> </center>
+  </form>  
+</body>
+</html>
